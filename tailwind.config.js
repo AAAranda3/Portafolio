@@ -10,9 +10,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#845EC2',    // Button background color
-        secondary: '#F5F0EA',  // Card background color
-        accent: '#3F0E76',     // Text color
+        primary: '#2c698d',    // Button background color
+        secondary: '#b0d9f1',  // Card background color
+        accent: '#2e2463',     // Text color
         dark: '#121212',       // Optional dark mode background
         light: '#F5F5F5',      // Optional light mode background
       },

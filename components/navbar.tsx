@@ -28,7 +28,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold text-inherit">Arnau Álvarez</p>
+            <p className="text-2xl font-bold text-inherit">Arnau Álvarez</p><p className="text-2xl font-bold text-inherit text-primary">.</p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
