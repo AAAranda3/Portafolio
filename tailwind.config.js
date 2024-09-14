@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'primary': '0 4px 6px rgba(0, 123, 255, 0.5), 0 1px 3px rgba(0, 123, 255, 0.3)', // Example using a blue color
+      },
       colors: {
         primary: '#2c698d',    // Button background color
         secondary: '#b0d9f1',  // Card background color

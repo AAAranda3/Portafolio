@@ -4,3 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-shape-divider-top-1726322990 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1726322990 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-top-1726322990 .shape-fill {
+    fill: #2C698D;
+}
