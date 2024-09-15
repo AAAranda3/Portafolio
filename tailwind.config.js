@@ -16,8 +16,8 @@ module.exports = {
         primary: '#2c698d',    // Button background color
         secondary: '#b0d9f1',  // Card background color
         accent: '#2e2463',     // Text color
-        dark: '#121212',       // Optional dark mode background
-        light: '#F5F5F5',      // Optional light mode background
+        dark: '#000000',       // Optional dark mode background
+        light: '#ffffff',      // Optional light mode background
       },
       fontFamily: {
         sans: ['"Quicksand"', 'system-ui', 'sans-serif'], // Quicksand as primary font
@@ -28,3 +28,5 @@ module.exports = {
   darkMode: "class",
   plugins: [nextui()],
 }
+
+

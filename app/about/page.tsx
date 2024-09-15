@@ -46,7 +46,7 @@ export default function AboutPage() {
           <p className="text-lg font-medium flex-grow mr-2">
             Certificate of Higher Education (DAM)
           </p>
-          <Chip color="primary">8.5</Chip>
+          <Chip color="primary">9.17</Chip>
         </div>
 
         {/* Second Row */}
@@ -59,7 +59,7 @@ export default function AboutPage() {
           <p className="text-lg font-medium flex-grow mr-2">
             Certificate of Higher Education (DAW)
           </p>
-          <Chip color="primary">9.2</Chip>
+          <Chip color="primary">8.47</Chip>
         </div>
       </div>
 

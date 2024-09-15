@@ -1,17 +1,16 @@
 "use client";
 
 import React from "react";
-import Image from "next/image"; // Ensure you import Image from next/image or use an <img> tag if not using Next.js
 
 type SkillItem = {
   img: string;
 };
 
-type SkillCardProps = {
+type SkillItemsProps = {
   list: SkillItem[];
 };
 
-export default function SkillCard({ list }: SkillCardProps) {
+export default function SkillCard({ list }: SkillItemsProps) {
   return (
     <div className="order-1 lg:order-2 col-lg-6">
       <div className="flex justify-center flex-wrap mb-2">

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Tabs, Tab } from "@nextui-org/react";
-import SkillCard from "@/components/skill-card"
+import SkillItem from "@/components/skill-item"
 
 // Define a type for the tab keys
 type TabKey = 'Mobile' | 'Web' | 'Others';
@@ -78,10 +78,10 @@ export default function SkillsPage() {
           </Tabs>
         </div>
 
-        <div className="mt-4 p-4 border rounded-md shadow-md border-primary">
-          {activeTab === 'Mobile' && <SkillCard list={mobileImages}></SkillCard>}
-          {activeTab === 'Web' && <SkillCard list={webImages}></SkillCard>}
-          {activeTab === 'Others' && <SkillCard list={otherImages}></SkillCard>}
+        <div className="mt-20">
+          {activeTab === 'Mobile' && <SkillItem list={mobileImages}></SkillItem>}
+          {activeTab === 'Web' && <SkillItem list={webImages}></SkillItem>}
+          {activeTab === 'Others' && <SkillItem list={otherImages}></SkillItem>}
         </div>
       </div>
     </div>
