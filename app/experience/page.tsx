@@ -2,13 +2,14 @@
 
 import React from 'react';
 import { Timeline } from '@/components/timeline';
+import { Chip } from '@nextui-org/react';
 
 const timelineData = [
   {
     title: 'Townhall of Terrassa',
     content: (
       <div className="text-justify">
-        <h4 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+        <h4 className="text-lg font-semibold text-primary">
           Mobile Developer
         </h4>
         <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-2">
@@ -30,7 +31,7 @@ const timelineData = [
     title: 'Witeklab',
     content: (
       <div className="text-justify">
-        <h4 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+        <h4 className="text-lg font-semibold text-primary">
           IOT Developer
         </h4>
         <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-2">
@@ -60,7 +61,7 @@ const timelineData = [
     title: 'VASS',
     content: (
       <div className="text-justify">
-        <h4 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+        <h4 className="text-lg font-semibold text-primary">
           Android Developer
         </h4>
         <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-2">
@@ -88,7 +89,7 @@ const timelineData = [
     title: 'WorldSensing',
     content: (
       <div className="text-justify">
-        <h4 className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+        <h4 className="text-lg font-semibold text-primary">
           Android Software Engineer
         </h4>
         <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-2">
@@ -121,6 +122,51 @@ export default function ExperiencePage() {
   return (
     <div className="flex flex-col items-center mt-20">
       <h2 className="text-4xl text-primary font-semibold mb-3">Experience</h2>
+      
+      <div className="w-full flex flex-col items-center justify-center pt-10">
+        {/* First Row */}
+        <div className="flex items-center mb-4">
+          {/* Icon 1 */}
+          <div className="text-primary mr-4">
+            <img src="/title.svg" alt="Title Icon" className="w-8 h-8" />
+          </div>
+          {/* Text and Chip 1 */}
+          <p className="text-lg font-medium flex-grow mr-2">
+            Certificate of Higher Education (DAM)
+          </p>
+          <Chip color="primary">9.17</Chip>
+        </div>
+
+        {/* Second Row */}
+        <div className="flex items-center">
+          {/* Icon 2 */}
+          <div className="text-primary mr-4">
+            <img src="/title.svg" alt="Title Icon" className="w-8 h-8" />
+          </div>
+          {/* Text and Chip 2 */}
+          <p className="text-lg font-medium flex-grow mr-2">
+            Certificate of Higher Education (DAW)
+          </p>
+          <Chip color="primary">8.47</Chip>
+        </div>
+      </div>
+
+      <div className="relative w-full bg-light dark:bg-dark py-12 px-4 md:px-8 lg:px-10">
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
+          <div className="flex justify-center gap-6">
+            <div className="bg-white dark:bg-black text-primary p-5 rounded-lg shadow-md shadow-primary w-48 h-24 flex flex-col items-center justify-center">
+              <h3 className="text-xl font-bold">Time</h3>
+              <p className="text-lg mt-2">3.5 Years</p>
+            </div>
+            <div className="bg-white dark:bg-black text-primary p-5 rounded-lg shadow-md shadow-primary w-48 h-24 flex flex-col items-center justify-center">
+              <h3 className="text-xl font-bold">Companies</h3>
+              <p className="text-lg mt-2">4 Companies</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
       <Timeline data={timelineData} />
     </div>
   );
