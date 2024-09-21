@@ -1,17 +1,30 @@
 import AboutSection from "@/app/about/page";
-import SectionDivider
-  from "@/components/section-divider";
 import SkillsPage from "./skills/page";
-import SectionDivider2 from "@/components/section-divider-2";
 import ExperiencePage from "./experience/page";
 import { ProjectsPage } from "./projects/page";
+import AboutMeSection from "./aboutme/page";
 export default function Home() {
   return (
     <>
-      <AboutSection />
-      <SkillsPage />
-      <ExperiencePage/>
-      <ProjectsPage/>
+       <section id="about">
+        <AboutSection />
+      </section>
+      
+      <section id="about-me">
+        <AboutMeSection />
+      </section>
+      
+      <section id="skills">
+        <SkillsPage />
+      </section>
+      
+      <section id="experience">
+        <ExperiencePage />
+      </section>
+      
+      <section id="projects">
+        <ProjectsPage />
+      </section>
     </>
   );
 }

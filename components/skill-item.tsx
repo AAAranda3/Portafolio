@@ -2,22 +2,22 @@
 
 import React from "react";
 
-type SkillItem = {
+type SkillImage = {
   img: string;
 };
 
-type SkillItemsProps = {
-  list: SkillItem[];
+type SkillImagesProps = {
+  list: SkillImage[];
 };
 
-export default function SkillCard({ list }: SkillItemsProps) {
+export default function SkillItem({ list }: SkillImagesProps) {
   return (
     <div className="order-1 lg:order-2 col-lg-6">
       <div className="flex justify-center flex-wrap mb-2">
         {list.map((item) => (
           <div
             key={item.img}
-            className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
+            className="icon icon-lg icon-shape shadow-sm rounded-circle m-1 transform transition-transform duration-300 hover:scale-110 hover:shadow-lg"
             style={{
               width: '64px',
               height: '64px',

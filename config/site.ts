@@ -1,63 +1,43 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "Arnau Álvarez Aranda",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
-    },
-    {
       label: "About",
-      href: "/about",
+      href: "#about-me",
     },
     {
       label: "Skills",
-      href: "/skills",
+      href: "#skills",
     },
     {
       label: "Experience",
-      href: "/experience",
+      href: "#experience",
     },
     {
       label: "Projects",
-      href: "/projects",
-    },
+      href: "#projects",
+    }
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "About",
+      href: "#about-me",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Skills",
+      href: "#skills",
+    },
+    {
+      label: "Experience",
+      href: "#experience",
     },
     {
       label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
+      href: "#projects",
+    }
   ],
   links: {
     github: "https://github.com/AAAranda3",

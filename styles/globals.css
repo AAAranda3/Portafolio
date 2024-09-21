@@ -26,4 +26,8 @@
 
 .text-justify {
     text-align: justify;
-  }
+}
+
+html {
+    scroll-behavior: smooth;
+}

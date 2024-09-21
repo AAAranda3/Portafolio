@@ -120,9 +120,9 @@ const timelineData = [
 
 export default function ExperiencePage() {
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-20 pt-20">
       <h2 className="text-4xl text-primary font-semibold mb-3">Experience</h2>
-      
+
       <div className="w-full flex flex-col items-center justify-center pt-10">
         {/* First Row */}
         <div className="flex items-center mb-4">
@@ -153,20 +153,24 @@ export default function ExperiencePage() {
 
       <div className="relative w-full bg-light dark:bg-dark py-12 px-4 md:px-8 lg:px-10">
         <div className="relative z-10 max-w-7xl mx-auto text-center">
-          <div className="flex justify-center gap-6">
-            <div className="bg-white dark:bg-black text-primary p-5 rounded-lg shadow-md shadow-primary w-48 h-24 flex flex-col items-center justify-center">
-              <h3 className="text-xl font-bold">Time</h3>
-              <p className="text-lg mt-2">3.5 Years</p>
+          <div className='text-lg'>
+            <p>This is the resume of my experience, counting practices and companies that ive worked.</p>
+          </div>
+          <div className="flex justify-center gap-16 pt-10">
+            <div className="flex flex-col items-center">
+              <p className="text-4xl mt-2 text-primary">3.5+</p>
+              <h3 className="text-lg">Work Experience</h3>
             </div>
-            <div className="bg-white dark:bg-black text-primary p-5 rounded-lg shadow-md shadow-primary w-48 h-24 flex flex-col items-center justify-center">
-              <h3 className="text-xl font-bold">Companies</h3>
-              <p className="text-lg mt-2">4 Companies</p>
+            <div className="flex flex-col items-center">
+              <p className="text-4xl mt-2 text-primary">4+</p>
+              <h3 className="text-lg">Companies</h3>
             </div>
           </div>
+
         </div>
 
       </div>
-      
+
       <Timeline data={timelineData} />
     </div>
   );

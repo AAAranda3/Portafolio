@@ -38,23 +38,29 @@ export const Navbar = () => {
         <ul className="flex gap-8">
           {siteConfig.navItems.map((item, index) => (
             <NavbarItem key={item.href}>
-              <NextLink
+              <a
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium flex items-center"
                 )}
-                color="foreground"
-                href={item.href}
+                href={item.href}  // Use #section-id here
               >
                 <span className="mr-2 font-bold text-ms text-primary">
                   {index < 9 ? `0${index + 1}.` : `${index + 1}.`}
                 </span>
                 {item.label}
-              </NextLink>
+              </a>
             </NavbarItem>
           ))}
         </ul>
-        <Button color="primary" variant="ghost">
+        <Button
+          as="a"
+          href="/curriculum.pdf" // This will load the PDF
+          color="primary"
+          variant="ghost"
+          target="_blank" // Opens the PDF in a new tab
+          rel="noopener noreferrer" // Security best practice when using target="_blank"
+        >
           Curriculum
         </Button>
 
@@ -77,19 +83,12 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
+              <a
+                href={item.href} // Use #section-id here
+                className="hover:underline"
               >
                 {item.label}
-              </Link>
+              </a>
             </NavbarMenuItem>
           ))}
         </div>

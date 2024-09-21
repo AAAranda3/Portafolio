@@ -29,7 +29,6 @@ const webImages = [
   { img: "/nextjs.svg" },
   { img: "/nodejs.svg" },
   { img: "/angular.svg" },
-  { img: "/ionic.svg" },
   { img: "/php.svg" },
   { img: "/tailwind.svg" },
   { img: "/mongodb.svg" },
@@ -60,7 +59,7 @@ export default function SkillsPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-20">
+    <div className="flex flex-col items-center justify-center">
       <h2 className="text-4xl text-primary font-semibold mb-3 p-8">Skills</h2>
 
       <div className="w-full max-w-lg">
