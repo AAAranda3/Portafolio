@@ -1,11 +1,8 @@
 "use client";
 
 import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
-import { Link } from "@nextui-org/link";
-import { GithubIcon } from "@/components/icons";
-import { siteConfig } from "@/config/site";
 
-export function ProjectsPage() {
+export default function ProjectsPage() {
   return (
     <div className="flex flex-col items-center mt-20 px-4 md:px-8 pb-20">
       <h2 className="text-4xl text-primary font-semibold mb-8">Projects</h2>
@@ -89,17 +86,3 @@ export function ProjectsPage() {
     </div>
   );
 }
-
-/* <Button
-              as="a"
-              href="https://www.savaexpress.com/restricciones/"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="primary"
-              type="button"
-              size="sm"
-              radius="full"
-            >
-              Get App
-            </Button> 
-*/
